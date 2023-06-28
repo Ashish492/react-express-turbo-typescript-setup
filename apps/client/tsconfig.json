@@ -1,0 +1,15 @@
+{
+  "exclude": ["node_modules"],
+  "extends": "tsconfig/vite.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@pages": ["./src/pages/*"],
+      "@component": ["./src/component/*"],
+      "@router": ["./src/router/*"]
+    }
+  },
+  "include": ["src"]
+}
